@@ -3,23 +3,12 @@ package factoryPattern.pizza.NYStyle;
 import factoryPattern.pizza.Pizza;
 
 public class NYStyleCheesePizza extends Pizza {
-    @Override
-    public void prepare() {
+    public NYStyleCheesePizza() {
+        name = "NY Style Sauce and Cheese Pizza";
+        dough = "Thin Crust Dough";
+        sauce = "Marinara Sauce";
 
+        toppings.add("Grated Reggiano Cheese");
     }
 
-    @Override
-    public void bake() {
-
-    }
-
-    @Override
-    public void cut() {
-
-    }
-
-    @Override
-    public void box() {
-
-    }
 }

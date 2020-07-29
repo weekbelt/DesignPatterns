@@ -3,23 +3,16 @@ package factoryPattern.pizza.ChicagoStyle;
 import factoryPattern.pizza.Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
-    @Override
-    public void prepare() {
+    public ChicagoStyleCheesePizza() {
+        name = "Chicago Style Deep Dish Cheese Pizza";
+        dough = "Extra Thick Crust Dough";
+        sauce = "Plum Tomato Sauce";
 
-    }
-
-    @Override
-    public void bake() {
-
+        toppings.add("Shredded Mozzarella Cheese");
     }
 
     @Override
     public void cut() {
-
-    }
-
-    @Override
-    public void box() {
-
+        System.out.println("Cutting the pizza into square slices");
     }
 }
